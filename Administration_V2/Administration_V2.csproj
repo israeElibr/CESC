@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{498CED7D-DC45-4519-AA07-A10B4DDA18C4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Administration_V2</RootNamespace>
+    <AssemblyName>Administration_V2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajtExp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajtExp.Designer.cs">
+      <DependentUpon>ajtExp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ajt_imp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajt_imp.Designer.cs">
+      <DependentUpon>ajt_imp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exp_GRID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exp_GRID.Designer.cs">
+      <DependentUpon>Exp_GRID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Imp_GRID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Imp_GRID.Designer.cs">
+      <DependentUpon>Imp_GRID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modf_Exp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modf_Exp.Designer.cs">
+      <DependentUpon>modf_Exp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modf_imp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modf_imp.Designer.cs">
+      <DependentUpon>modf_imp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SDR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SDR.Designer.cs">
+      <DependentUpon>SDR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supp_Exp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supp_Exp.Designer.cs">
+      <DependentUpon>supp_Exp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="supp_imp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="supp_imp.Designer.cs">
+      <DependentUpon>supp_imp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WDR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WDR.Designer.cs">
+      <DependentUpon>WDR.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ajtExp.resx">
+      <DependentUpon>ajtExp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajt_imp.resx">
+      <DependentUpon>ajt_imp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Exp_GRID.resx">
+      <DependentUpon>Exp_GRID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imp_GRID.resx">
+      <DependentUpon>Imp_GRID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modf_Exp.resx">
+      <DependentUpon>modf_Exp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modf_imp.resx">
+      <DependentUpon>modf_imp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SDR.resx">
+      <DependentUpon>SDR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supp_Exp.resx">
+      <DependentUpon>supp_Exp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supp_imp.resx">
+      <DependentUpon>supp_imp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WDR.resx">
+      <DependentUpon>WDR.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\technicien-audiovisuel-68320.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\téléchargement %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\import.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deleted_message_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_message_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\identification_documents_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
