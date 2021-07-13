@@ -8,7 +8,7 @@ On a utilisé comme méthodologie d'analyse et de conception  :
 Voici les outils qui ont été utilisés afin de créer le projet de A à Z .
 
 - -S.G.B.D : Microsoft SQL Server V2018, T-Sql 
-- -Langage de programmation : JAVA 11
+- -Langage de programmation : C#
 - -Icones & illustrations : Pichon, Icon8, FontAwesome 5
 - Quelques Captures d'écran des différentes partis de l'application :
 
